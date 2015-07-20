@@ -1,0 +1,45 @@
+PODS:
+  - FormatterKit/TimeIntervalFormatter (1.4.3)
+  - GDataXML-HTML (1.2.0)
+  - Nimble (1.0.0)
+  - OHHTTPStubs (4.2.0):
+    - OHHTTPStubs/Default (= 4.2.0)
+  - OHHTTPStubs/Core (4.2.0)
+  - OHHTTPStubs/Default (4.2.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.2.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.2.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.2.0)
+  - PBWebViewController (0.3)
+  - Quick (0.3.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SSPullToRefresh (1.2.4)
+
+DEPENDENCIES:
+  - FormatterKit/TimeIntervalFormatter (= 1.4.3)
+  - GDataXML-HTML (= 1.2.0)
+  - Nimble (= 1.0.0)
+  - OHHTTPStubs
+  - PBWebViewController (= 0.3)
+  - Quick (= 0.3.1)
+  - SDWebImage (= 3.7.1)
+  - SSPullToRefresh (= 1.2.4)
+
+SPEC CHECKSUMS:
+  FormatterKit: 291aab3fe2f921c0ccee0b66a5f1edff97a4ef9c
+  GDataXML-HTML: dac3692417e9fc612f8e12d8baae3706fccedcc8
+  Nimble: 8bee528e5fcc403653076545db562d2b5db7bb87
+  OHHTTPStubs: f639130b83fb5f4f022d38f841141b0a6fa77249
+  PBWebViewController: 909b1505da6ba7c5c82519a6457246027926061e
+  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
+  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
+  SSPullToRefresh: 369e862c1d6528c7a354fc85cd4763d4e670e9af
+
+COCOAPODS: 0.37.2

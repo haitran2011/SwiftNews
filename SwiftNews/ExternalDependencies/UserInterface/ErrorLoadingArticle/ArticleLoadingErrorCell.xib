@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticleLoadingErrorCell" rowHeight="468" id="KGk-i7-Jjw" userLabel="ArticleLoadingErrorCell" customClass="ArticleLoadingErrorCell" customModule="SwiftNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to load articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-fW-857" userLabel="Error Title">
+                        <rect key="frame" x="46" y="152" width="227.5" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="Sba-JP-TBX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXw-Vl-IZe" userLabel="Refresh Container View">
+                        <rect key="frame" x="0.0" y="381" width="320" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refresh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="180" translatesAutoresizingMaskIntoConstraints="NO" id="Op7-mk-MUs">
+                                <rect key="frame" x="136" y="34" width="50" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Op7-mk-MUs" secondAttribute="centerY" id="A0T-kk-TXB"/>
+                            <constraint firstAttribute="height" constant="86" id="Anh-o7-FDS"/>
+                            <constraint firstAttribute="centerX" secondItem="Op7-mk-MUs" secondAttribute="centerX" id="iIQ-Un-O9A"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="92e-mC-Df3" appends="YES" id="77h-2p-hxo"/>
+                        </connections>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your network connection and tap 'refresh' to try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="256" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-8s-eTR" userLabel="Error Description">
+                        <rect key="frame" x="36" y="190" width="247.5" height="29"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zXw-Vl-IZe" secondAttribute="bottom" constant="0.5" id="05m-uK-DgP"/>
+                    <constraint firstAttribute="trailing" secondItem="zXw-Vl-IZe" secondAttribute="trailing" id="2AQ-h3-IFZ"/>
+                    <constraint firstAttribute="centerX" secondItem="dMx-8s-eTR" secondAttribute="centerX" id="9jA-Ev-rZy"/>
+                    <constraint firstItem="zXw-Vl-IZe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A2W-3z-s7H"/>
+                    <constraint firstAttribute="centerX" secondItem="wL3-fW-857" secondAttribute="centerX" id="L8p-8h-O2M"/>
+                    <constraint firstItem="dMx-8s-eTR" firstAttribute="top" secondItem="wL3-fW-857" secondAttribute="bottom" constant="10.5" id="QUy-wl-iEa"/>
+                    <constraint firstAttribute="centerX" secondItem="dMx-8s-eTR" secondAttribute="centerX" id="TPx-cH-s6L"/>
+                    <constraint firstItem="zXw-Vl-IZe" firstAttribute="top" secondItem="dMx-8s-eTR" secondAttribute="bottom" constant="162" id="jva-Pf-5C0"/>
+                    <constraint firstAttribute="centerX" secondItem="wL3-fW-857" secondAttribute="centerX" id="toc-LG-Hbq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="-2344" y="-129"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="92e-mC-Df3">
+            <connections>
+                <action selector="refreshViewTapped:" destination="KGk-i7-Jjw" id="3To-Wj-fHP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

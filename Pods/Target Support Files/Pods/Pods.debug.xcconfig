@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FormatterKit" "${PODS_ROOT}/Headers/Public/GDataXML-HTML" "${PODS_ROOT}/Headers/Public/Nimble" "${PODS_ROOT}/Headers/Public/OHHTTPStubs" "${PODS_ROOT}/Headers/Public/PBWebViewController" "${PODS_ROOT}/Headers/Public/Quick" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SSPullToRefresh" $(SDKROOT)/usr/include/libxml2
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FormatterKit" -isystem "${PODS_ROOT}/Headers/Public/GDataXML-HTML" -isystem "${PODS_ROOT}/Headers/Public/Nimble" -isystem "${PODS_ROOT}/Headers/Public/OHHTTPStubs" -isystem "${PODS_ROOT}/Headers/Public/PBWebViewController" -isystem "${PODS_ROOT}/Headers/Public/Quick" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/SSPullToRefresh"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-FormatterKit" -l"Pods-GDataXML-HTML" -l"Pods-PBWebViewController" -l"Pods-SDWebImage" -l"Pods-SSPullToRefresh" -l"xml2" -framework "ImageIO"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
